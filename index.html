@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{padding: 0;margin: 0;background: #F1F3F4;}
+
+		nav ul ul {display: none;}
+		nav ul li:hover > ul {display: block;}
+		nav ul:after {
+			content: ""; clear: both; display: block;
+		}
+		nav ul li {
+			float: left;
+		}
+		.center-frame{margin-top: 100px;margin: auto;background: white;}
+		@media screen and (min-width:1024px) {
+		    .center-frame{width: 800px;}
+		}
+		@media screen and (min-width:492px) and (max-width: 1023px) {
+		    .center-frame{width: 400px;}
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="center-frame">
+		<nav>
+			<ul>
+				<li><a href="#"><p>Home</p></a></li>
+				<li><a href="#">pronunciation</a>
+					<ul>
+						<li>
+							<input name="pronunciation" type="radio" value="American" checked="checked">American
+							<input name="pronunciation" type="radio" value="British">British
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">other</a></li>
+			</ul>
+		</nav>
+		<div class="contain">
+			
+		</div>
+	</div>
+</body>
+</html>
